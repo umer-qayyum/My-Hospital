@@ -3,7 +3,6 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export const dbConnection = () => {
-  // const uri = "mongodb+srv://zaibimalik7994:zaibi$7994@cluster0.lk3i4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
   const uri = "mongodb://localhost:27017";
   if (!uri) {
     console.error("MongoDB URI is not defined. Check your .env file.");
